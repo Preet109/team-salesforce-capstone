@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dining Reservations</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"/>
+  <script src="js/scripts.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(function(){
+		 $(".img-swap").live('hover', function() {
+		 	if ($(this).attr("class") == "img-swap") {
+			this.src = this.src.replace("_on","_off");
+			}else {
+			this.src = this.src.replace("_off","_on");
+			}
+			$(this).toggleClass("on");
+		});
+});
+</script>
+</head>
+<body>
+
+ <!--Start of Navbar section-->
+ <nav class="navbar">  
+    <div class="navbar__container">           
+        <a href="/" id="navbar__logo"><i class="fas fa-stroopwafel"></i>Restaurant Name</a>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="menu.html" class="navbar__links">Menu</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/" class="navbar__links">About Us</a>
+            </li>
+            <li class="navbar__btn">
+                <a href="login.html" class="button">LOGIN</a>
+            </li>
+        </ul>
+    </div>
+ </nav>
+ <!--End Navbar section-->
+
+ <!-- Start of Product section-->
+
+ <div class="right-section1">
+        <div class="subtitle">Here Are</div>
+        <label for="name">Enter Name:</label>
+        <input type="text" id="name">
+        <div class="dropdown">
+            <button class="dropbtn">Party Size</button>
+            <div class="dropdown-content">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </div>
+        </div>
+        <button class="Make__Reservation">Make Reservation</button>
+ </div>
+
+ <div class="Products_Section1">
+    <div class="left-section1">
+	    <div class="top-Tab1">
+	    <ul>
+	    <li>Date:<input type="date" id="date"></li>
+	    <li>Time:<input type="time" name="time" id="time"></li>
+	    </ul>
+	</div>
+	<div class="content_col3">
+	    <div class="top-Tab3">
+	    <ul>
+	    <li>
+		    <div class="reserv_circle">
+		    <p style=" padding: 0px 0; text-align: center;">
+		    <img src="images/swap/img_swap_off.png" alt=""  />
+		</p>
+		</div>
+		</li>
+		<li>
+		<div class="reserv_circle">
+		<p style=" padding: 0px 0; text-align: center;">
+		<a href="registration-complete.html"><img src="images/img_swap_on.png" alt="" class="img-swap" /></a>
+		</p>
+		</div>
+		</li>
+		
+		<li>
+		<div class="reserv_circle">
+		<p style=" padding: 0px 0; text-align: center;">
+		<img src="images/img_swap_off.png" alt="" />
+		</p>
+		</div>
+		</li>
+		
+		<li>
+		<div class="reserv_circle">
+		<p style=" padding: 0px 0; text-align: center;">
+		<a href="registration-complete.html"><img src="images/swap/img_swap_on.png" alt="" class="img-swap" /></a>
+		</p>
+		</div>
+		</li>
+		</ul>
+		<ul>
+		<li>
+		<div class="reserv_circle">
+		<p style=" padding: 0px 0; text-align: center;">
+		<a href="registration-complete.html"><img src="images/swap/img_swap_on.png" alt="" class="img-swap" /></a>
+		</p>
+		</div>
+		</li>		
+		<li>
+		<div class="reserv_circle">
+		<p style=" padding: 0px 0; text-align: center;">
+		<img src="images/img_swap_off.png" alt="" />
+		</p>
+		</div>
+		</li>
+		<li>
+		<div class="reserv_circle">
+		<p style=" padding: 0px 0; text-align: center;">
+		<a href="registration-complete.html"><img src="images/img_swap_on.png" alt="" class="img-swap" /></a>
+		</p>
+		</div>
+		</li>
+		<li>
+		<div class="reserv_circle">
+		<p style=" padding: 0px 0; text-align: center;">
+		<img src="images/swap/img_swap_off.png" alt=""  />
+		</p>
+		</div>
+		</li>
+		</ul>
+		<ul>
+		<li>
+		<div class="reserv_circle">
+		<p style=" padding: 0px 0; text-align: center;">
+		<img src="images/enterance.png" alt=""  />
+		</p>
+		</div>
+		</li>
+		<li>
+		<div class="reserv_circle">
+		<p style=" padding: 0px 0; text-align: center;">
+		<a href="registration-complete.html"><img src="images/img_swap_on.png" alt="" class="img-swap" /></a>
+		</p>
+		</div>
+		</li>
+		
+		<li>
+		<div class="reserv_circle">
+		<p style=" padding: 0px 0; text-align: center;">
+		<img src="images/img_swap_off.png" alt="" />
+		</p>
+		</div>
+		</li>
+		
+		<li>
+		<div class="reserv_circle">
+		<p style=" padding: 0px 0; text-align: center;">
+		<a href="registration-complete.html"><img src="images/swap/img_swap_on.png" alt="" class="img-swap" /></a>
+		</p>
+		</div>
+		</li>
+		</ul>
+		
+	</div>
+	</div>
+  </div>
+
+    
+
+  </div>
+    </div>
+    
+ <!-- End of Product section-->
+</body>
+</html>
