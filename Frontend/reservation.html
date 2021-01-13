@@ -50,23 +50,26 @@ jQuery(function(){
  <!--End Navbar section-->
 
  <!-- Start of Product section-->
-
  <div class="right-section1">
-        <div class="subtitle">Here Are</div>
-        <label for="name">Enter Name:</label>
-        <input type="text" id="name">
-        <div class="dropdown">
-            <button class="dropbtn">Party Size</button>
-            <div class="dropdown-content">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-            </div>
-        </div>
-        <button class="Make__Reservation">Make Reservation</button>
+        <div class="subtitle">Reservation Information</div>
+        <label for="name" id="name__label">Enter Name:</label>
+        <input class="name_text" id="name">
+       	
+		<form>
+			<label for="party__size" id="ps__label">Party Size:</label>
+			<select id="party__size" name="party_size">
+			<option value="one">1</option>
+			<option value="two">2</option>
+			<option value="three">3</option>
+			<option value="four">4</option>
+			<option value="five">5</option>
+			<option value="six">6</option>
+			</select>
+		</form>
+
+		<a href="reservation-complete.html">
+			<button class="Make__Reservation">Make Reservation</button>
+		</a>
  </div>
 
  <div class="Products_Section1">
