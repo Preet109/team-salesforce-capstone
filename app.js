@@ -22,10 +22,12 @@ app.use('/statuses', statusRoutes);
 const orderRoutes = require('./routes/orders');
 app.use('/orders', orderRoutes);
 
+const seatRoutes = require('./routes/seats');
+app.use('/seats', seatRoutes);
+
 const authRoute = require('./routes/auth');
 
-// const tableRoutes = require('./routes/tables');
-// app.use('/tables', tableRoutes);
+
 //Routes
 app.get('/', (req, res) => {
     res.send('We are on home');

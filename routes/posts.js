@@ -21,7 +21,7 @@ router.post('/', async (req,res)=>{
         const savedPost = await post.save();
         res.json(savedPost);
     }catch(err){
-        res,json({message: err});
+        res.json({message: err});
     }
 });
 module.exports = router;
