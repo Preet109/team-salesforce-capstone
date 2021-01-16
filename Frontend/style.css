@@ -274,27 +274,28 @@ body{
     }
 
     .content_col3{
-    background-image:url('images/woodplanks.png');
+        background-image:url('images/woodplanks.png');
     }
 
     .top-Tab3 ul{
-    list-style-type: none;
-    text-align: left;
-    padding: 3px 20px;
+        list-style-type: none;
+        text-align: left;
+        padding: 3px 20px;
     }
 
     .top-Tab3 ul li{
-    display:inline-block;
-    padding: 75px;
+        display:inline-block;
+        padding: 75px;
     }
       
   
     .Products_Section1{
-    display:flex;
-    padding: 80px 100px;}
+        display:flex;
+        padding: 80px 100px;
+    }
     
     .top-Tab1{
-    margin-left: 27px;
+        margin-left: 27px;
     }
     
     .top-Tab1 ul li input#date, input#time{background:none;}
@@ -380,7 +381,6 @@ body{
     font-size: 20px;
     margin-right: 68%;
     color: #E4D8CC;
-
 }
 
 #name__passbox, select, textarea {
@@ -441,3 +441,97 @@ body{
     color: #fff;
 } 
 /* End of Login */
+
+/* Start of create-account */
+
+.container__ca{
+    padding-top: 8%;
+}
+
+.ca__box{
+    width: 40%;
+    height: 80%;
+    background-color: #5EA777;
+    margin: auto;
+    border: 10px solid #004C24;
+    border-radius: 10px;
+}
+
+.res__logo-ca{
+    background-color: #FFF;
+    background-image: linear-gradient(to top, #FFF 0%, #F1992B 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 3rem;
+    font-family: 'Comfortaa-Bold';
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.new-cus__box{
+    width: 80%;
+    margin: auto;
+    background-color: #85A61C;
+    border: 10px solid #85A61C;
+    border-radius: 5px;
+}
+
+.new-cus__title{
+    color: #FFF;
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-family: monospace;
+}
+
+.new-cus__text{
+    color: #FFF;
+}
+
+#full-name, select, textarea {
+    width: 35%;
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    margin-left: 10px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+#ca-info-box, select, textarea {
+    width: 72%;
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 10px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+#ca-admin-box, select, textarea {
+    width: 72%;
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 10px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+#ca-admin-box::placeholder{
+    color: #FF0000;
+}
+
+/* End of create-account */

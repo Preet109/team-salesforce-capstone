@@ -34,7 +34,7 @@
             </ul>
         </div>
     </nav>
- <!--End Navbar section-->>
+ <!--End Navbar section-->
 
  <!--Start of Main page section-->
 	    <div class="container__comp">
@@ -44,3 +44,10 @@
 
 </body>
 </html>
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const reservation_id = urlParams.get('reservation_id')
+    document.getElementById('reserve_span').innerHTML=reservation_id
+</script>
