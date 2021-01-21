@@ -1,302 +1,393 @@
-html {
-    margin: 0;
-    padding: 0;
-}
-h1{
-  font-size: 48px;
-  color: lightblue;
-}
-.topnav{
-  		overflow:hidden;
-  		background-color:#bf8c1f;
-  	}
-  	.topnav a{
-  		float:left;
-  		color:#3b362d;
-  		text-align: center;
-  		padding: 14px 16px;
-  		font-size: 20px;
-  	}
-  	.topnav a:hover {
-  		background-color: #ddd;
-  		color: black;
-	}
-  	.topnav button{
-  		color:#3b362d;
-  		text-align: center;
-  		padding: 14px 16px;
-  		font-size: 20px;
-  	}
-  	.topnav-right{
-  		float:right;
-  	}
-  	body{
-  		background-image:url('images/mainbackground.jpg');
-  		background-attachment: fixed;  
-  		background-size: cover;
-  		text-align: center;
-  	}
-  	.container {
-  		display: flex;
- 		justify-content: center;
- 		padding-top: 100px;
-	}
-	.center {
-  		width: 800px;
-  		background-color:#bf8c1f;
-  		font-size: 48px;
-  		color:#3b362d;
-  		font-family:Lucida Bright; 
-  		padding-right: 30px;
-  		padding-left: 30px;
-	}
-	.center a {
-  		width: 800px;
-  		background-color:#bf8c1f;
-  		font-size: 48px;
-  		color:#3b362d;
-  		font-family:Lucida Bright; 
-  		padding-right: 30px;
-  		padding-left: 30px;
-	}
-	.center a:hover {
-  		color: black;
-	}
-  .grid-container{
-    display: grid;
-    grid-gap:10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr .2fr;
-    padding:10px;
+@font-face {
+    font-family: 'Pacifico-Regular';
+    src: url('fonts/Pacifico-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/Pacifico-Regular.woff') format('woff'), url('fonts/Pacifico-Regular.ttf')  format('truetype'), url('fonts/Pacifico-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
   }
-  .grid-item{
-    background-color: white;
-    text-align: left;
-    padding:20px;
-    font-size:30px;
-    outline-style: double;
-    outline-color: lightblue;
+  @font-face {
+    font-family: 'Comfortaa-Regular';
+    src: url('fonts/Comfortaa-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/Comfortaa-Regular.woff') format('woff'), url('fonts/Comfortaa-Regular.ttf')  format('truetype'), url('fonts/Comfortaa-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
   }
-  .grid-item-1{
-    grid-column: span 2;
-    grid-row: span 3;
+  @font-face {
+    font-family: 'Comfortaa-Bold';
+    src: url('fonts/Comfortaa-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/Comfortaa-Bold.woff') format('woff'), url('fonts/Comfortaa-Bold.ttf')  format('truetype'), url('fonts/Comfortaa-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
   }
-  .grid-item-2{
-    grid-column: span 2;
-    grid-row: span 2;
+  * { margin:0; padding:0; border:0 none;  outline:none; 
   }
-  /* .grid-item-3{
-
-  }*/
-   
-  .grid-item-4{
-	display: block;
-	width: 100%;
-	border: none;
-	background-color: #4CAF50;
-	padding: 14px 28px;
-	font-size: 16px;
-	cursor: pointer;
-	text-align: center;
+  body{
+          background-image:url('images/mainbackground.png');
+            background-attachment: fixed;  
+            background-size: cover;
+            text-align: center;
+          font-family: 'Comfortaa-Regular';
+  }
+  /*Header Section Start here*/
+  .topnav{
+  padding: 17px 0px;
+      background-color: #e3ca10;
+      height: 17px;
+        }
+  
+            .topleftNave{
+            float:left;}
+        .topleftNave a{
+            color:#fff;
+            text-align: center;
+          font-family: 'Comfortaa-Regular';
+              text-decoration: none;
+            padding: 7px 16px;
+            font-size: 18px;
+        }
+        .topleftNave a:hover {
+            color: #e3ca10;
+      }
+      .topnav-right{
+      float:right;
+      }
+      .topnav-right a{		
+      background: #e3ca10;
+      padding: 9px 24px;
+      font-family: 'Comfortaa-Regular';
+      color:#fff;
+      text-decoration:none;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 1px solid #707070;
+      margin: 0px 16px 6px 10px;
+      text-transform: uppercase;
+        }
+            .topnav-right a:hover{		
+      background: #e3ca10;
+  }
+      /*End of Header Section Start here*/
+      
+      /*Start of Main page Section here*/
+      .Products_Section{
+          display:flex;
+      }
+      .top-center{
+          padding-top: 10%;
+      }
+      .top-center span{
+            font-family: 'Pacifico-Regular';
+            font-size: 22px;
+            font-weight: 800;
+            color: #fff;
+      }
+      .top-center p{
+      background-color: #e3ca10;
+      font-size: 70px;
+      font-weight: 800;
+      color: #fff;
+      padding: 25px;
+      border: 1px solid #333;
+      margin: 0% 35%;
+      font-family: 'Pacifico-Regular';
+        
+      }
+  
+      .container-bottom{
+          display: flex;
+      width: 85%;
+         padding: 2% 6%;
+      }
+      .center-left{
+      width:50%;
+       background-color: #e3ca10;
+           padding: 50px;
+               margin: 30px;
+           border: 1px solid #333;
+      }
+      .center-left a{
+       font-size: 70px;
+      color: #fff;
+      font-family: 'Pacifico-Regular';
+      text-decoration: none;
+      }
+      .center-right{
+      width:50%;
+       background-color: #e3ca10;
+           padding: 50px;
+               margin: 30px;
+                border: 1px solid #333;
+      }
+      .center-right a{
+      font-size: 70px;
+      color: #fff;
+      font-family: 'Pacifico-Regular';
+      text-decoration: none;
+      }
+      .center a:hover {
+            color: black;
+      }
+  
+    /*End of Main page Section here*/
     
-  } 
-  .menu-image{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
+    
+      /*Reservation*/
+      .left-section1{
+      width: 100%;
+          }
+      .content_col3{
+          background: #e6e3e3;
+      }
+      .top-Tab3 ul{
+      list-style-type: none;
+      text-align: left;
+      padding: 6px 20px;
+      }
+      .top-Tab3 ul li{
+      display:inline-block;
+      padding: 75px;
+      }
+      
+  
+      .Products_Section1{
+          display:flex;
+              padding: 80px 100px;}
+      .top-Tab1{
+          margin-left: 27px;
   }
-
-
- /* Login and registration page */
- a, a:hover, a:focus a:active{
-    text-decoration: none;
-    outline: 0;
-}
-.main-signin {
-    box-shadow: 0 10px 20px #000;
-    height: 360px;
-    left: 50%;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 455px;
-    border-radius: 10px;
-}
-.main-signin .main-signin__head {
-    background: #242328;
-    border-bottom: 1px solid #2d2f32;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0px 1px 0px #000;
-    padding: 12px 0;
-}
-.main-signin .main-signin__head p {
-    color: #586069;
-    text-align: center;
-}
-.main-signin .main-signin__middle {
-    background: #1f1e23;
-    border-bottom: 1px solid #2d2f32;
-    border-top: 1px solid #2d2f32;
-    box-shadow: 0px 1px 0px #000;
-}
-.main-signin .main-signin__middle .middle__form {
-    margin: 40px 0 20px 0;
-}
-.main-signin .main-signin__middle .middle__form ::-webkit-input-placeholder {
-    color: #25262a;
-}
-.main-signin .main-signin__middle .middle__form :-moz-placeholder {
-    color: #25262a;
-}
-.main-signin .main-signin__middle .middle__form ::-moz-placeholder {
-    color: #25262a;
-}
-.main-signin .main-signin__middle .middle__form :-ms-input-placeholder {
-    color: #25262a;
-}
-.main-signin .main-signin__middle .middle__form input[type="text"], .main-signin .main-signin__middle .middle__form input[type="password"], .main-signin .main-signin__middle .middle__form input[type="submit"] {
-    background: #fff;
-    border-radius: 5px 5px 0 0;
-    border: none;
-    color: #25262a;
-    display: block;
-    margin: 0 20px;
-    outline: none;
-    padding: 15px 0;
-    text-indent: 20px;
-    width: 90%;
-}
-.main-signin .main-signin__middle .middle__form input[type="password"] {
-    border-top: 1px solid #acabab;
-    border-radius: 0 0 5px 5px;
-}
-/* Registration page style */
-.registerbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0px 1px 0px #000;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
+      .top-Tab1 ul li input#date, input#time{background:none;}
+      .top-Tab1 ul {
+      list-style-type: none;
+      text-align: left;
+          padding: 6px 20px;
   }
-.main-signin .main-signin__middle .middle__form input[type="submit"] {
-    background: #e62739 none repeat scroll 0 0;
-    border-bottom: 1px solid #000;
-    border-radius: 5px;
-    border-top: 1px solid #e62739;
-    color: #fff;
-    font-size: 0.8em;
-    letter-spacing: 1px;
-    margin-top: 15px;
-    text-transform: uppercase;
-}
+          .top-Tab1 li{
+          display:inline;
+      }
+      .top-Tab1 ul li{
+      font-size: 16px;
+      background: #e6e3e3;
+      border: 1px solid #333;
+      padding: 8px 12px;
+      margin-right: 0px;
+      border-radius: 5px;
+      font-family: 'Comfortaa-Regular';
+      text-decoration: none;
+      color: #333;
+          
+      }
+    
 
-.main-signin .main-signin__middle .middle__form input[type="submit"]:active {
-    background: #80d6f7;
-}
-.main-signin .main-signin__foot {
-    background: #242328;
-    border-top: 1px solid #2d2f32;
-    border-radius: 0 0 10px 10px;
-    float: left;
-    padding: 12px 0;
-    width: 100%;
-}
-.main-signin .main-signin__foot .foot__left {
-    float: left;
-    padding: 0 0 0 6%;
-    width: 56%;
-}
-.main-signin .main-signin__foot .foot__left p {
-    color: #586069;
-    margin: 0;
-    padding: 12px 0 0 0;
-    text-transform: uppercase;
-}
-.main-signin .main-signin__foot .foot__right {
-    float: left;
-    width: 38%;
-}
-.main-signin .main-signin__foot .foot__right .twit,
-.main-signin .main-signin__foot .foot__right .face {
-    float: left;
-}
-.main-signin .main-signin__foot .foot__right .twit a,
-.main-signin .main-signin__foot .foot__right .face a {
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    display: block;
-    margin: -12px 0;
-    text-indent: -999em;
-    width: 85px;
-    height: 77px;
-    border-bottom-right-radius: 10px;
-}
-.main-signin .main-signin__foot .foot__right .twit a:hover
-{
-    background: #00aced;
-}
-.foot__right img {
-    display: block;
-    margin: 0 auto;
-    padding: 25px;
-    width: 30%;
-}
-.main-signin .main-signin__foot .foot__right .face a:hover {
-    background: #3B5998;
-}
-.copyright {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    color: #fff;
-    padding-bottom: 25px;
-}
-.copyright a{
-   color: #e62739;
-}
-.copyright a:hover{
-   color: #1F1E23;
-}
 
-@media (max-width: 991px){
-    .main-signin {
-        top: 30%;
-    }
-}
-@media (max-width: 767px){
-    .main-signin {
-        top: 60%;
-    } 
-    .copyright {
-        display: none;
-    }
-}
-@media (max-width: 500px){
-    .foot__right img {
-        padding: 21px 17px;
-        width: 35%;
-    }
-    .main-signin .main-signin__foot .foot__right .twit a, .main-signin .main-signin__foot .foot__right .face a {
-        height: 60px;
-        width: 52px;
-    }
-    .main-signin .main-signin__foot .foot__left p{
-        font-size: 14px;
+
+      /*LOGIN AND REGISTERATION DONT EDIT BELOW THIS*/
+      a, a:hover, a:focus a:active{
+        text-decoration: none;
+        outline: 0;
     }
     .main-signin {
+        box-shadow: 0 10px 20px #000;
+        height: 360px;
+        left: 50%;
+        margin: 0 auto;
+        position: absolute;
         top: 50%;
-        width: 280px;
+        transform: translate(-50%, -50%);
+        width: 455px;
+        border-radius: 10px;
     }
-    .main-signin .main-signin__middle .middle__form input[type="text"], .main-signin .main-signin__middle .middle__form input[type="password"], .main-signin .main-signin__middle .middle__form input[type="submit"]{
-        width:86%;
+    .main-signin .main-signin__head {
+        background: #242328;
+        border-bottom: 1px solid #2d2f32;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0px 1px 0px #000;
+        padding: 12px 0;
     }
-}
+    .main-signin .main-signin__head p {
+        color: #586069;
+        text-align: center;
+    }
+    .main-signin .main-signin__middle {
+        background: #1f1e23;
+        border-bottom: 1px solid #2d2f32;
+        border-top: 1px solid #2d2f32;
+        box-shadow: 0px 1px 0px #000;
+    }
+    .main-signin .main-signin__middle .middle__form {
+        margin: 5px 0 20px 0;
+    }
+    .main-signin .main-signin__middle .middle__form ::-webkit-input-placeholder {
+        color: #25262a;
+    }
+    .main-signin .main-signin__middle .middle__form :-moz-placeholder {
+        color: #25262a;
+    }
+    .main-signin .main-signin__middle .middle__form ::-moz-placeholder {
+        color: #25262a;
+    }
+    .main-signin .main-signin__middle .middle__form :-ms-input-placeholder {
+        color: #25262a;
+    }
+    .main-signin .main-signin__middle .middle__form input[type="name"], .main-signin__middle .middle__form input[type="text_lg"], .main-signin__middle .middle__form input[type="text"], .main-signin .main-signin__middle .middle__form input[type="password_lg"], .main-signin .main-signin__middle .middle__form input[type="password"], .main-signin__middle .middle__form input[type="password2"], .main-signin .main-signin__middle .middle__form input[type="submit"] {
+        background: #fff;
+        border-radius: 5px 5px 0 0;
+        border: none;
+        color: #25262a;
+        display: block;
+        margin: 0 20px;
+        outline: none;
+        padding: 15px 0;
+        text-indent: 20px;
+        width: 90%;
+    }
+    .main-signin .main-signin__middle .middle__form input[type="name"] {
+        border-top: 1px solid #acabab;
+        border-radius: 5px 5px 0 0;
+    }
+    .main-signin .main-signin__middle .middle__form input[type="text"] {
+        border-top: 1px solid #acabab;
+        border-radius: 0 0 0px 0px;
+    }
+    .main-signin .main-signin__middle .middle__form input[type="text_lg"] {
+        border-top: 1px solid #acabab;
+        border-radius: 5px 5px 0 0;
+    }
+    .main-signin .main-signin__middle .middle__form input[type="password_lg"] {
+        border-top: 1px solid #acabab;
+        border-radius: 0 0 5px 5px;
+    }
+    .main-signin .main-signin__middle .middle__form input[type="password"] {
+        border-top: 1px solid #acabab;
+        border-radius: 0 0 0px 0px;
+    }
+    .main-signin .main-signin__middle .middle__form input[type="password2"] {
+        border-top: 1px solid #acabab;
+        border-radius: 0 0 5px 5px;
+    }
+    /* Registration page style */
+    .registerbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0px 1px 0px #000;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+    .main-signin .main-signin__middle .middle__form input[type="submit"] {
+        background: #e62739 none repeat scroll 0 0;
+        border-bottom: 1px solid #000;
+        border-radius: 5px;
+        border-top: 1px solid #e62739;
+        color: #fff;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        margin-top: 15px;
+        text-transform: uppercase;
+    }
+    
+    .main-signin .main-signin__middle .middle__form input[type="submit"]:active {
+        background: #80d6f7;
+    }
+    .main-signin .main-signin__foot {
+        background: #242328;
+        border-top: 1px solid #2d2f32;
+        border-radius: 0 0 10px 10px;
+        float: left;
+        padding: 12px 0;
+        width: 100%;
+    }
+    .main-signin .main-signin__foot .foot__left {
+        float: left;
+        padding: 0 0 0 0%;
+        width: 56%;
+    }
+    .main-signin .main-signin__foot .foot__left p {
+        color: #586069;
+        margin: 0;
+        padding: 12px 0 0 0;
+        text-transform: uppercase;
+    }
+    .main-signin .main-signin__foot .foot__right {
+        float: left;
+        width: 33%;
+    }
+    .main-signin .main-signin__foot .foot__right .twit,
+    .main-signin .main-signin__foot .foot__right .face {
+        float: left;
+    }
+    .main-signin .main-signin__foot .foot__right .twit a,
+    .main-signin .main-signin__foot .foot__right .face a {
+        -moz-transition: 0.4s;
+        -o-transition: 0.4s;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        display: block;
+        margin: -12px 0;
+        text-indent: -999em;
+        width: 85px;
+        height: 77px;
+        border-bottom-right-radius: 10px;
+    }
+    .main-signin .main-signin__foot .foot__right .twit a:hover
+    {
+        background: #00aced;
+    }
+    .foot__right img {
+        display: block;
+        margin: 0 auto;
+        padding: 25px;
+        width: 30%;
+    }
+    .main-signin .main-signin__foot .foot__right .face a:hover {
+        background: #3B5998;
+    }
+    .copyright {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        color: #fff;
+        padding-bottom: 25px;
+    }
+    .copyright a{
+       color: #e62739;
+    }
+    .copyright a:hover{
+       color: #1F1E23;
+    }
+    
+    @media (max-width: 991px){
+        .main-signin {
+            top: 30%;
+        }
+    }
+    @media (max-width: 767px){
+        .main-signin {
+            top: 60%;
+        } 
+        .copyright {
+            display: none;
+        }
+    }
+    @media (max-width: 500px){
+        .foot__right img {
+            padding: 21px 17px;
+            width: 35%;
+        }
+        .main-signin .main-signin__foot .foot__right .twit a, .main-signin .main-signin__foot .foot__right .face a {
+            height: 60px;
+            width: 52px;
+        }
+        .main-signin .main-signin__foot .foot__left p{
+            font-size: 14px;
+        }
+        .main-signin {
+            top: 50%;
+            width: 280px;
+        }
+        .main-signin .main-signin__middle .middle__form input[type="text"], .main-signin .main-signin__middle .middle__form input[type="password"], .main-signin .main-signin__middle .middle__form input[type="submit"]{
+            width:86%;
+        }
+    }
+    
