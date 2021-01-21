@@ -1,40 +1,49 @@
-<!doctype html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dining Reservations</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="js/scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>   
+    <h1 class="TopTitle">Restaurant Diagram</h1>   
 
-<body>
-  <div class="wrapper">
- <div class="topnav">
- <div class="topleftNave">
-  <a class="active" href="index	.html">Home</a>
-  <a href="menu.html">Menu</a>
-  <a href="#">About</a>
-  </div>
-  <div class="topnav-right">
-    <a href="login.html">Login</a>
-  </div>
-  </div>
-	<div class="container">
-	<div class="top-center">
-	<p>Welcome,<br><span>Would you like to ...</span>
-	</p>
-	</div>
-</div>
-	<div class="container-bottom">
-	<div class="center-left">
-	<a href="reservation.html">Dine in</a></div>
-	
-	<div class="center-right">
-	<a href="menu.html">Order To-Go</a>
-	</div>
-	</div>
-	</div>
+    <!--Diagram-->
+    <div style="margin-right:25%">
+        <div class="wrapper">
+            <div class="diagram_floor">
+                <div class="first_row">
+                <button class="A1" onclick='document.getElementById("buttonexample").
+                style.display="Hello World"'>A1</button>
+                <button class="A2">A2</button>
+                <button class="A3">A3</button>
+            </div>
+            
+            <div class="second_row">
+                <button class="B1">B1</button>
+                <button class="B2">B2</button>
+                <button class="B3">B3</button>
+            </div>
+    
+            <div class="third_row">
+                <button class="C1">C1</button>
+                <button class="C2">C2</button>
+                <button class="C3">C3</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Sidebar-->
+    <div class="sidebar" style="width:25%; right:0;">
+        <h3 class="table_title">Table Information</h3>
+            <div class="menu">
+                <p id="buttonexample" style="display:none;">Change</p>
+            </div>
+
+    </div>
+    <script src="app js"></script>
 </body>
+
 </html>
